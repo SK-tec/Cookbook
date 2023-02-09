@@ -1,8 +1,10 @@
 .App {
-  text-align: center;
-  background-color: #f5d56d;
+  text-align: center; 
 }
-
+h1{ background-color: #f5d56d;}
+.recepies{
+  background-color:rgb(247, 232, 226)
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
