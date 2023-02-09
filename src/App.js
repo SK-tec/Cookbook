@@ -1,10 +1,50 @@
-
+import { useState, useEffect } from "react";
 import './App.css';
+const contentful = require("contentful");
 
 function App() {
+  const [books, setBooks] = useState([]);
+
+  const API_BASE_URL = process.env.REACT_APP_API_BASE_URL;
+  const SPACE_ID = process.env.REACT_APP_SPACE_ID;
+  const ENVIRONMENT_ID = process.env.REACT_APP_ENVIRONMENT_ID;
+  const ACCESS_TOKEN = process.env.REACT_APP_ACCESS_TOKEN;
+
+  useEffect(() => {
+    const client = contentful.createClient({
+      // This is the space ID. A space is like a project folder in Contentful terms
+      space: SPACE_ID,
+      // This is the access token for this space. Normally you get both ID and the token in the Contentful web app
+      accessToken: ACCESS_TOKEN,
+      environment: ENVIRONMENT_ID,
+    });
+    client
+      .getEntries()
+      .then((result) => {
+        setBooks(result.items);
+      })
+      .catch((err) => console.log(err));
+  }, []);
   return (
-    <div className="App"> 
-    <h1 style={{color:'green',textDecoration:'underline'}}>Welcome To CookBook Project</h1>     
+    <div className="App">
+      <h1 style={{ color: "green", textDecoration: "underline" }}>
+        Welcome To CookBook Project
+      </h1>
+
+      {books.map((book) => (
+        <div key={book.fields.id} className="recepies">
+          {console.log(book.fields.id)}
+          <h2 style={{ color: "red" }}>{book.fields.title}</h2>
+          <h4>Author:{book.fields.author}</h4>
+          <img
+            src={book.fields.image.fields.file.url}
+            alt="RecipeImage"
+            style={{ width: "200px" }}
+          />
+          <p>Comments:{book.fields.comments}</p>
+          <hr />
+        </div>
+      ))}
     </div>
   );
 }
