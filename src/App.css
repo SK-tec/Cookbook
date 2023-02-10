@@ -1,7 +1,7 @@
 .App {
   text-align: center; 
 }
-h1{ background-color: #f5d56d;}
+h1{ background-color: whitesmoke} 
 .recepies{
   background-color:rgb(247, 232, 226)
 }
@@ -31,6 +31,19 @@ h1{ background-color: #f5d56d;}
   color: #61dafb;
 }
 
+.background{
+  background-image: url(../src/images/bg.jpg);
+  height: 70vh;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.centered {
+  color:rgb(245, 7, 245);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
