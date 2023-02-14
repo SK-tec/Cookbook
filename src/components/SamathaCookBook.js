@@ -17,7 +17,13 @@ const SamathaCookBook = ({books}) => {
           <Button variant="primary">Recipe</Button>
         </Card.Body>
       </Card>
+      
       ))}
+{
+  books.map((book)=>(<div>
+    {book.fields.recipe}
+  </div>))
+}
      
       
       
