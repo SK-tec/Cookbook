@@ -1,6 +1,14 @@
 import { useState, useEffect } from "react";
 import './App.css';
+import Header from "./components/Header";
+import SamathaCookBook from "./components/SamathaCookBook";
+import TeasviCookBook from "./components/TejasviCookBook";
+import ErshiaCookBook from "./components/ErshiaCookBook";
+import YesserCookBook from "./components/YesserCookBook";
+import { Routes, Route, NavLink } from "react-router-dom";
 const contentful = require("contentful");
+
+
 
 function App() {
   const [books, setBooks] = useState([]);
@@ -27,11 +35,10 @@ function App() {
   }, []);
   return (
     <div className="App">
-      <h1 style={{ color: "green", textDecoration: "underline" }}>
-        Welcome To CookBook Project
-      </h1>
+      <Header/>
+      
 
-      {books.map((book) => (
+      {/* {books.map((book) => (
         <div key={book.fields.id} className="recepies">
           {console.log(book.fields.id)}
           <h2 style={{ color: "red" }}>{book.fields.title}</h2>
@@ -44,7 +51,11 @@ function App() {
           <p>Comments:{book.fields.comments}</p>
           <hr />
         </div>
-      ))}
+      ))} */}
+    <SamathaCookBook books={books.filter((book) => book.fields.id==1)}/>
+    <TeasviCookBook books={books.filter((book) => book.fields.id==2)}/>
+    <ErshiaCookBook books={books.filter((book) => book.fields.id==3)}/>
+    <YesserCookBook books={books.filter((book) => book.fields.id==4)}/>
     </div>
   );
 }
