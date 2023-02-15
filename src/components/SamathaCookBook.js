@@ -1,9 +1,8 @@
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
+
 const SamathaCookBook = ({books}) => {
-   console.log(books)
-    //let book=[]
-    return ( <>
+       return ( <>
      {books.map((book) => (
        
         <Card style={{ width: '35rem',marginLeft:'auto',marginRight:'auto' }} className="mt-3">
@@ -19,11 +18,9 @@ const SamathaCookBook = ({books}) => {
       </Card>
       
       ))}
-{
-  books.map((book)=>(<div>
-    {book.fields.recipe}
-  </div>))
-}
+    
+
+
      
       
       
