@@ -1,14 +1,14 @@
 import { useState, useEffect } from "react";
 import './App.css';
+import MyNavbar from "./components/MyNavbar";
 import Header from "./components/Header";
 import SamathaCookBook from "./components/SamathaCookBook";
 import TeasviCookBook from "./components/TejasviCookBook";
 import ErshiaCookBook from "./components/ErshiaCookBook";
 import YesserCookBook from "./components/YesserCookBook";
+
 import { Routes, Route} from "react-router-dom";
 const contentful = require("contentful");
-
-
 
 function App() {
   const [books, setBooks] = useState([]);
@@ -35,13 +35,13 @@ function App() {
   }, []);
   return (
     <div className="App">
-      <Header/>
+      <MyNavbar/>      
       <Routes>     
-      <Route path="/"> </Route>
+      <Route path="/"element={<Header/>} > </Route>
       <Route path="/tejasvi" element={<TeasviCookBook books={books.filter((book) => book.fields.id==2)}/>}></Route>
       <Route path="/samatha" element={<SamathaCookBook books={books.filter((book) => book.fields.id==1)}/>}></Route>
       <Route path="/ershia" element={<ErshiaCookBook books={books.filter((book) => book.fields.id==3)}/>} ></Route>
-      <Route path="/yesser" element={<YesserCookBook books={books.filter((book) => book.fields.id==4)}/>}></Route>
+      <Route path="/yasser" element={<YesserCookBook books={books.filter((book) => book.fields.id==4)}/>}></Route>
       </Routes>
 
       {/* {books.map((book) => (
