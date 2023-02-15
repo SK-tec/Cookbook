@@ -1,3 +1,5 @@
+
+
 body{
   background-color: rgb(233, 240, 240);
 }
@@ -30,3 +32,29 @@ h1{ background-color: whitesmoke}
     transform: rotate(360deg);
   }
 }
+
+.footer {
+
+  background-color: slategray;
+  
+}
+.footer .container {
+  padding-top: 25px;
+}
+
+h3 {
+   color:aqua;
+   
+   
+}
+
+p1 {
+  font-size:medium ;
+  color: black;
+  padding-top: 10px;
+}
+
+.social-icons {
+  padding-top: 15px; 
+
+} 

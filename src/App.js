@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import './App.css';
 import Header from "./components/Header";
+import Footer from "./components/Footer";
 import SamathaCookBook from "./components/SamathaCookBook";
 import TeasviCookBook from "./components/TejasviCookBook";
 import ErshiaCookBook from "./components/ErshiaCookBook";
@@ -43,6 +44,8 @@ function App() {
       <Route path="/ershia" element={<ErshiaCookBook books={books.filter((book) => book.fields.id==3)}/>} ></Route>
       <Route path="/yesser" element={<YesserCookBook books={books.filter((book) => book.fields.id==4)}/>}></Route>
       </Routes>
+      
+       <Footer/>
 
       {/* {books.map((book) => (
         <div key={book.fields.id} className="recepies">
