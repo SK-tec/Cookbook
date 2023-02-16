@@ -1,8 +1,8 @@
 import { Carousel } from "react-bootstrap";
-import slide1 from "../images/bg_4.jpg";
+import slide1 from "../images/vegetable_skewer.jpg";
 import slide2 from "../images/bg_5.jpg";
 import slide3 from "../images/Prawn1.jpg";
-import slide4 from "../images/vegetable_skewer.jpg";
+import slide4 from "../images/Rasmalai.jpeg";
 
 const Slideshow = () => {
     return ( <>
@@ -15,8 +15,8 @@ const Slideshow = () => {
             height="550"
           />
           <Carousel.Caption>
-            <h3>First slide label</h3>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            <h1 className="slide1" >Good food never fail in bringing people together</h1>
+            
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
@@ -27,8 +27,8 @@ const Slideshow = () => {
             height="550"
           />
           <Carousel.Caption>
-            <h3>Second slide label</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <h1 className="slide2">Eat Good Think Good</h1>
+            
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
@@ -39,8 +39,8 @@ const Slideshow = () => {
             height="550"
           />
           <Carousel.Caption>
-            <h3>Third slide label</h3>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            <h1 className="slide3">Where there is good food, there is happiness</h1>
+            
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
@@ -51,10 +51,8 @@ const Slideshow = () => {
             height="550"
           />
           <Carousel.Caption>
-            <h3>Fourth slide label</h3>
-            <p>
-              Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-            </p>
+            <h1 className="slide4">Food is one of life’s greatest pleasures</h1>
+            
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>
