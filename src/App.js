@@ -6,6 +6,7 @@ import TeasviCookBook from "./components/TejasviCookBook";
 import ErshiaCookBook from "./components/ErshiaCookBook";
 import YesserCookBook from "./components/YesserCookBook";
 import { Routes, Route} from "react-router-dom";
+import TeamSection from "./components/TeamSection";
 const contentful = require("contentful");
 
 
@@ -43,6 +44,10 @@ function App() {
       <Route path="/ershia" element={<ErshiaCookBook books={books.filter((book) => book.fields.id==3)}/>} ></Route>
       <Route path="/yesser" element={<YesserCookBook books={books.filter((book) => book.fields.id==4)}/>}></Route>
       </Routes>
+
+      <div className="Team">
+      <TeamSection />
+      </div>
 
       {/* {books.map((book) => (
         <div key={book.fields.id} className="recepies">
