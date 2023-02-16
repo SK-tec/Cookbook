@@ -1,7 +1,4 @@
 
-body{
-  background-color: azure;
-}
 .App{
   background-color:rgb(248, 241, 233)
 }
@@ -32,4 +29,15 @@ tr:nth-child(even) {background-color: rgb(183, 198, 202);}
 th,
 td {
     width: 25%;
+}
+.social-icons {
+  padding-top: 15px; 
+
+} 
+.footer {
+  background-color: slategray;
+  
+}
+.footer .container {
+  padding-top: 25px;
 }
