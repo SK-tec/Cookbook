@@ -23,7 +23,7 @@ const TeamSection = () => {
         />
         <h2>Samatha</h2>
         <p>
-          Degree in Chef's Management<br></br>India
+          Degree in Chef's Management Hydrabad India
         </p>
       </div>
       <div className="col-lg-3">
@@ -37,7 +37,7 @@ const TeamSection = () => {
 
         <h2>Ershia</h2>
         <p>
-          Degree in Chef's Management<br></br>Iran
+          Degree in Chef's Management Iran
         </p>
       </div>
       <div className="col-lg-3">
@@ -51,7 +51,7 @@ const TeamSection = () => {
 
         <h2>Tejasvi</h2>
         <p>
-          PG in Chef's Management <br></br>India
+          PG in Chef's Management Mumbai India
         </p>
       </div>
       <div className="col-lg-3">
@@ -65,7 +65,7 @@ const TeamSection = () => {
 
         <h2>Yasser</h2>
         <p>
-          PG in Chef's Management Hotel<br></br>Syria 
+          PG in Chef's Management in Hotel Syria 
         </p>
       </div>
     </div>
