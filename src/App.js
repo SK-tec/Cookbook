@@ -2,10 +2,14 @@ import { useState, useEffect } from "react";
 import './App.css';
 import MyNavbar from "./components/MyNavbar";
 import Header from "./components/Header";
-import SamathaCookBook from "./components/SamathaCookBook";
-import TeasviCookBook from "./components/TejasviCookBook";
-import ErshiaCookBook from "./components/ErshiaCookBook";
-import YesserCookBook from "./components/YesserCookBook";
+import Prawn_curry from "./components/Prawn_curry";
+import Tandoori_chicken from "./components/Tandoori_chicken";
+import Poke_bowl from "./components/Poke_bowl";
+import Shawrma from "./components/Shawrma";
+import Tiramisu from "./components/Tiramisu";
+import Jalebi from "./components/Jalebi";
+import Creme_brulee from "./components/Creme_brulee";
+import Rasamalai from "./components/Rasamalai";
 import Footer from "./components/Footer";
 
 import { Routes, Route} from "react-router-dom";
@@ -39,10 +43,15 @@ function App() {
       <MyNavbar/>      
       <Routes>     
       <Route path="/"element={<Header/>} > </Route>
-      <Route path="/tejasvi" element={<TeasviCookBook books={books.filter((book) => book.fields.id==2)}/>}></Route>
-      <Route path="/samatha" element={<SamathaCookBook books={books.filter((book) => book.fields.id==1)}/>}></Route>
-      <Route path="/ershia" element={<ErshiaCookBook books={books.filter((book) => book.fields.id==3)}/>} ></Route>
-      <Route path="/yasser" element={<YesserCookBook books={books.filter((book) => book.fields.id==4)}/>}></Route>
+      
+      <Route path="/prawn_curry" element={<Prawn_curry books={books.filter((book) => book.fields.id==1)}/>}></Route>
+      <Route path="/tandoori_chicken" element={<Tandoori_chicken books={books.filter((book) => book.fields.id==2)}/>}></Route>
+      <Route path="/poke_bowl" element={<Poke_bowl books={books.filter((book) => book.fields.id==3)}/>} ></Route>
+      <Route path="/shawrma" element={<Shawrma books={books.filter((book) => book.fields.id==4)}/>}></Route>
+      <Route path="/tiramisu" element={<Tiramisu books={books.filter((book) => book.fields.id==5)}/>}></Route>
+      <Route path="/jalebi" element={<Jalebi books={books.filter((book) => book.fields.id==6)}/>}></Route>
+      <Route path="/creme_brulee" element={<Creme_brulee books={books.filter((book) => book.fields.id==7)}/>} ></Route>
+      <Route path="/rasamalai" element={<Rasamalai books={books.filter((book) => book.fields.id==8)}/>}></Route>
       </Routes>
       <Footer/>
 

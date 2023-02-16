@@ -1,13 +1,13 @@
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import Richtext from './Richtext';
-const ErshiaCookBook = ({books}) => {
+const Tandoori_chicken = ({books}) => {
    console.log(books)
     //let book=[]
     return ( <>
-     {books.map((book) => (
-       <div>
-        <Card style={{ width: '35rem',marginLeft:'auto',marginRight:'auto' }} className="mt-3" >
+     {books.map((book) => ( 
+      <div>      
+        <Card style={{ width: '35rem',marginLeft:'auto',marginRight:'auto' }} className="mt-3">
         <Card.Img variant="top" src={book.fields.image.fields.file.url} alt="RecipeImage" />
         <Card.Body>
           <Card.Title>{book.fields.title}</Card.Title>
@@ -27,4 +27,4 @@ const ErshiaCookBook = ({books}) => {
       </> );
 }
  
-export default ErshiaCookBook;
+export default Tandoori_chicken;
