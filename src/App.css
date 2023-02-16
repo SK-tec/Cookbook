@@ -9,6 +9,18 @@ body{
   color:orange
 }
 
+.slide1{
+  color:rgb(95, 10, 86);
+}
+.slide2{
+  color:rgba(4, 169, 4, 0.807);
+}
+.slide3{
+  color: orange;
+}
+.slide4{
+  color: rgb(100, 2, 2);
+}
 table{
   border: 1px solid  black;
   margin-left: auto;
