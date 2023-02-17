@@ -5,17 +5,19 @@ import { Container, Row, Col } from "react-bootstrap";
 const RecipeGrid = ({ books }) => {
   return (
     <>
-      <Container className="recipegrid">
+      <Container className="recipegrid mt-3">
+      <h2 className='text-success text-center mb-4'>Our Recipes </h2>
+      <hr />
         <Row >         
             {books.map((book) => (
                  <Col sm={6} md={4}>
-              <Card
+              <Card 
                 style={{
                   width: "20rem",
                   marginLeft: "auto",
                   marginRight: "auto",
                 }}
-                className="mt-3"
+                className=" mt-3"
               >
                 <Card.Img
                   variant="top"

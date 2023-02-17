@@ -11,13 +11,15 @@
   padding-top: 20px;
 }
 
-#prawntext p{
+/* #prawntext p{
   text-align: center;
-}
-
+} */
 #prawntext li{
-  list-style: none;
+ color:sienna ;
 }
+/* #prawntext li{
+  list-style: none;
+} */
 
 #prawntext table td p{
   text-align: start;
@@ -45,10 +47,11 @@ table{
   border: 1px solid  black;
   margin-left: auto;
   margin-right: auto;
-  color:darkblue
+  color:sienna
+  
 }
 tr:nth-child(odd) {background-color: rgb(234, 238, 234)}
-tr:nth-child(even) {background-color: rgb(183, 198, 202);}
+tr:nth-child(even) {background-color: #b4cf96;}
 th,
 td {
     width: 25%;
@@ -95,4 +98,11 @@ td {
 .footer .btn{
   background-color: orange;
   border: none;
+}
+.card:hover{
+  transform: scale(1.01);  
+ }
+p{text-align: justify;}
+h6{
+  color:orangered
 }
