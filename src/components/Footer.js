@@ -5,7 +5,7 @@ import Form from 'react-bootstrap/Form';
 import { Navbar,Nav,NavLink,NavbarBrand,Container } from "react-bootstrap";
 const Footer = () => {
     return ( <>
-     <div className="footer">
+     <div className="footer mt-4">
       <div className="container">
         <div className="row">
           <div className="col-lg-4 col-sm-12 usefull-links">

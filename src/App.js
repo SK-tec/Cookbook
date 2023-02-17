@@ -12,6 +12,7 @@ import Creme_brulee from "./components/Creme_brulee";
 import Rasamalai from "./components/Rasamalai";
 import Footer from "./components/Footer";
 
+
 import { Routes, Route} from "react-router-dom";
 const contentful = require("contentful");
 
@@ -42,7 +43,7 @@ function App() {
     <div className="App">
       <MyNavbar/>      
       <Routes>     
-      <Route path="/"element={<Header/>} > </Route>
+      <Route path="/"element={<Header books={books}/>} > </Route>
       
       <Route path="/prawn_curry" element={<Prawn_curry books={books.filter((book) => book.fields.id==1)}/>}></Route>
       <Route path="/tandoori_chicken" element={<Tandoori_chicken books={books.filter((book) => book.fields.id==2)}/>}></Route>
@@ -53,6 +54,7 @@ function App() {
       <Route path="/creme_brulee" element={<Creme_brulee books={books.filter((book) => book.fields.id==7)}/>} ></Route>
       <Route path="/rasamalai" element={<Rasamalai books={books.filter((book) => book.fields.id==8)}/>}></Route>
       </Routes>
+      
       <Footer/>
 
       {/* {books.map((book) => (

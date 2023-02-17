@@ -17,3 +17,7 @@
 #dropdown-basic-button:hover{
     background-color: orange;
 }
+/*Remove dropdown arrow from Navdropdown*/
+.dropdown-toggle::after {
+    display: none !important; 
+  }
