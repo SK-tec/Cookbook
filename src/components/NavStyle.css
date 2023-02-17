@@ -2,3 +2,18 @@
     color: white;
     background-color:#4E7425;
 }
+
+.navLink:hover{
+    background-color: orange;
+    padding: 7px;
+    border-radius: 6px;
+}
+
+#dropdown-basic-button{
+    background-color: #4E7425;
+    border: none;
+}
+
+#dropdown-basic-button:hover{
+    background-color: orange;
+}
