@@ -15,7 +15,7 @@ const Tandoori_chicken = ({books}) => {
           <h4>Author:{book.fields.author}</h4>
           <p>{book.fields.comments}</p>
           </Card.Text>
-          <Button variant="primary">Recipe</Button>
+          {/* <Button variant="primary">Recipe</Button> */}
         </Card.Body>
       </Card>
       <Richtext content={book.fields.recipe} />

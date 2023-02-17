@@ -9,7 +9,7 @@ const Richtext = ({content}) => {
           [MARKS.UNDERLINE]: (text) => <u>{text}</u>
         },
         renderNode: {
-          [BLOCKS.PARAGRAPH]: (node, children) => <p style={{color:'darkblue'}}>{children}</p>,
+          [BLOCKS.PARAGRAPH]: (node, children) => <p style={{color:'	maroon'}}>{children}</p>,
           [BLOCKS.HEADING_1]: (node, children) => <h1>{children}</h1>,
           [BLOCKS.HEADING_2]: (node, children) => <h2>{children}</h2>,
           [BLOCKS.HEADING_3]: (node, children) => <h3>{children}</h3>,

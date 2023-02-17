@@ -4,7 +4,7 @@
 }
 
 .navLink:hover{
-    background-color: orange;
+    background-color: rgb(230, 155, 18);
     padding: 7px;
     border-radius: 6px;
 }
