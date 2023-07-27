@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/my-app/static/css/main.8e7972d8.css",
-    "main.js": "/my-app/static/js/main.e10579cf.js",
-    "static/js/787.5256424d.chunk.js": "/my-app/static/js/787.5256424d.chunk.js",
-    "static/media/Prawn1.jpg": "/my-app/static/media/Prawn1.0247a193dad8e33bd3bb.jpg",
-    "static/media/bg_5.jpg": "/my-app/static/media/bg_5.22f00f3ac0eeadbef2fd.jpg",
-    "static/media/vegetable_skewer.jpg": "/my-app/static/media/vegetable_skewer.3d55885b5374dfbeff2a.jpg",
-    "static/media/Tejasvi.png": "/my-app/static/media/Tejasvi.e7e82a0ce3ff7a370b09.png",
-    "static/media/Tejasvi.jpg": "/my-app/static/media/Tejasvi.5d3a1eb5b9f3e2b2f110.jpg",
-    "static/media/Rasmalai.jpeg": "/my-app/static/media/Rasmalai.2df7cf2b95fda61df5f6.jpeg",
-    "static/media/Yesser.jpg": "/my-app/static/media/Yesser.2aea8823bd7a566ae5be.jpg",
-    "static/media/Ershia.jpg": "/my-app/static/media/Ershia.1ca5039c0bd1d82d8f35.jpg",
-    "static/media/Samatha.jpg": "/my-app/static/media/Samatha.d3def4065d21072ed52f.jpg",
-    "static/media/brand.png": "/my-app/static/media/brand.fda57c52e8accdee437c.png",
-    "index.html": "/my-app/index.html",
-    "main.8e7972d8.css.map": "/my-app/static/css/main.8e7972d8.css.map",
-    "main.e10579cf.js.map": "/my-app/static/js/main.e10579cf.js.map",
-    "787.5256424d.chunk.js.map": "/my-app/static/js/787.5256424d.chunk.js.map"
+    "main.css": "/Cookbook/static/css/main.8e7972d8.css",
+    "main.js": "/Cookbook/static/js/main.21c93076.js",
+    "static/js/787.5256424d.chunk.js": "/Cookbook/static/js/787.5256424d.chunk.js",
+    "static/media/Prawn1.jpg": "/Cookbook/static/media/Prawn1.0247a193dad8e33bd3bb.jpg",
+    "static/media/bg_5.jpg": "/Cookbook/static/media/bg_5.22f00f3ac0eeadbef2fd.jpg",
+    "static/media/vegetable_skewer.jpg": "/Cookbook/static/media/vegetable_skewer.3d55885b5374dfbeff2a.jpg",
+    "static/media/Tejasvi.png": "/Cookbook/static/media/Tejasvi.e7e82a0ce3ff7a370b09.png",
+    "static/media/Tejasvi.jpg": "/Cookbook/static/media/Tejasvi.5d3a1eb5b9f3e2b2f110.jpg",
+    "static/media/Rasmalai.jpeg": "/Cookbook/static/media/Rasmalai.2df7cf2b95fda61df5f6.jpeg",
+    "static/media/Yesser.jpg": "/Cookbook/static/media/Yesser.2aea8823bd7a566ae5be.jpg",
+    "static/media/Ershia.jpg": "/Cookbook/static/media/Ershia.1ca5039c0bd1d82d8f35.jpg",
+    "static/media/Samatha.jpg": "/Cookbook/static/media/Samatha.d3def4065d21072ed52f.jpg",
+    "static/media/brand.png": "/Cookbook/static/media/brand.fda57c52e8accdee437c.png",
+    "index.html": "/Cookbook/index.html",
+    "main.8e7972d8.css.map": "/Cookbook/static/css/main.8e7972d8.css.map",
+    "main.21c93076.js.map": "/Cookbook/static/js/main.21c93076.js.map",
+    "787.5256424d.chunk.js.map": "/Cookbook/static/js/787.5256424d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.8e7972d8.css",
-    "static/js/main.e10579cf.js"
+    "static/js/main.21c93076.js"
   ]
 }
